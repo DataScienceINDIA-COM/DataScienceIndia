@@ -1,0 +1,765 @@
+/*
+0. GLOBAL
+1. NAVBAR
+2. HERO SECTION
+3. ABOUT
+4. TIMELINE
+5. BENEFITS
+6. FAQ
+7. CONTACT US
+8. FOOTER
+9. RESOURCE PAGE
+10. ABOUT PAGE
+--. MEDIA QUERIES
+*/
+
+// ============= ============= ============= GLOBAL ============= ============= ============= 
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    font-family: 'Helvetica Neue',
+        sans-serif;
+}
+
+.common-section-padding {
+    padding: 3rem 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.title-common {
+    font-size: 5rem;
+
+    @media(max-width: 575.98px) {
+        font-size: 3rem;
+    }
+
+    @media(max-width: 320px) {
+        font-size: 2rem;
+    }
+}
+
+.Subhead-heading {
+    text-transform: capitalize;
+}
+
+.background-gray {
+    background-color: #efefef;
+}
+
+.gradient-btn {
+    background: linear-gradient(90deg, rgb(26, 33, 39) 0%, rgb(49, 140, 233) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(26, 33, 39) 0%, rgb(49, 140, 233) 100%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+}
+
+.gradient-text {
+    display: inline-block;
+    background: linear-gradient(90deg, #252f3a 0%, #318CE9 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-top {
+    display: inline-block;
+    background: linear-gradient(90deg, #318CE9 0%, #318CE9 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-vertical {
+    // background: linear-gradient(335deg, rgba(155, 230, 165, 1) 0%, rgba(26, 32, 32, 0.6) 100%);
+    background: linear-gradient(-45deg, #a2d4a0, #a2d4a0, #516a50);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    margin-top: 80px;
+}
+
+form .label,
+.Label {
+    border: none;
+}
+
+// ============= ============= ============= NAVBAR  ============= ============= ============= 
+.git-logo {
+    width: 80px;
+
+    @media(max-width: 375px) {
+        width: 110px;
+    }
+}
+
+.inc-logo {
+    width: 100px;
+
+    @media(max-width: 375px) {
+        width: 80px;
+    }
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    .f4 {
+        font-size: 1.5rem !important;
+    }
+}
+
+.Header-item {
+
+    .border-left {
+        border-color: #fff !important;
+    }
+}
+
+// ============= ============= ============= HERO SECTION  ============= ============= ============= 
+
+.main-bg {
+    background: #22292C;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 5rem 0;
+    margin-top: 69px;
+
+    @media(max-width: 375px) {
+        margin-top: 72px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+
+        @media(max-width: 575.98px) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .image-on-lg {
+        img {
+            width: 60%;
+        }
+    }
+
+    .externship-logo-header {
+        width: 100px;
+        margin-bottom: 2rem;
+
+        @media(max-width: 575.98px) {
+            width: 100px;
+        }
+    }
+
+    .starts-bg {
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + 250px);
+        height: 100%;
+        top: 0;
+        opacity: 0.4;
+        left: calc(50% - 1000px);
+        transform-origin: center;
+        background: url('https://githubuniverse.com/2017/assets/img/universe/shapes/stars-lg.svg') center/400px auto repeat;
+    }
+}
+
+// ============= ============= =============  ABOUT ============= ============= ============= 
+.lookup-octo {
+    width: 250px;
+    position: absolute;
+    bottom: -32px;
+    right: 0px;
+    z-index: 1;
+}
+
+// ============= ============= =============  BENEFITS ============= ============= ============= 
+.gitTimeline {
+    margin-left: 290px;
+
+    @media(max-width: 575.98px) {
+        margin-left: 130px;
+    }
+
+    @media(max-width: 425px) {
+        margin-left: 65px;
+    }
+
+    .TimelineItem-avatar {
+        text-align: right;
+        width: 325px;
+        position: absolute;
+        left: -352px;
+        margin-top: 10px;
+        z-index: 1;
+
+        @media(max-width: 575.98px) {
+            width: 175px;
+            left: -194px;
+        }
+
+        @media(max-width: 425px) {
+            width: 140px;
+            left: -160px;
+        }
+    }
+
+    .TimelineItem-body {
+        margin-top: 10px;
+    }
+
+
+}
+
+
+// ============= ============= =============  BENEFITS ============= ============= ============= 
+
+.benefitTimeline {
+
+    &::before {
+        background-color: transparent;
+    }
+
+    .TimelineItem-badge {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+// ============= ============= =============  FAQ ============= ============= ============= 
+.accordion-section .panel-default>.panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+
+.accordion-section .panel-default .panel-title a {
+    font-weight: 400;
+    color: #333333;
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    content: "\f078";
+    color: #333333;
+    float: right;
+    margin-top: 0px;
+}
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f054";
+}
+
+.accordion-section .panel-default .panel-body {
+    font-size: 0.9rem;
+}
+
+// 
+.faq-heading {
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-transition: text-indent 0.2s;
+    text-indent: 0px;
+    color: #333;
+}
+
+.faq-text {
+    font-weight: 400;
+    color: #919191;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.faq {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #E1E1E1;
+    border-bottom: none;
+}
+
+.faq label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 56px;
+    padding-top: 1px;
+
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+    display: none;
+}
+
+.faq .faq-arrow {
+    width: 5px;
+    height: 5px;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-top: 2px solid rgba(0, 0, 0, 0.33);
+    border-right: 2px solid rgba(0, 0, 0, 0.33);
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked+label>.faq-arrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked+label {
+    display: block;
+    background: rgba(255, 255, 255, 255) !important;
+    color: #4f7351;
+    height: 225px;
+    padding: 15px 35px;
+    transition: height 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type='checkbox']:not(:checked)+label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+    padding: 15px 35px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// ============= ============= ============= SOCIAL FOOTER ============= ============= ============= 
+
+.social-row {
+    .social-right {
+        text-align: right;
+
+        a {
+            margin: 0 0.3rem;
+            color: #222222;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media(max-width: 768px) {
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 768px) {
+        text-align: center;
+    }
+}
+
+// ============= ============= ============= FOOTER ============= ============= ============= 
+.black-bg {
+    background-color: #222A2C;
+}
+
+.site-footer {
+    color: #fff;
+
+    .container {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+
+    .border-light {
+        border-color: #4b4b4b !important;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            font-size: 1rem;
+            line-height: 2;
+        }
+    }
+}
+
+
+// ============= ============= ============= BACK TO TOP ============= ============= ============= 
+#back-to-top {
+    position: fixed;
+    line-height: unset;
+    padding: 0.1rem 0.6rem;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    -webkit-transition: opacity .5s, visibility .5s;
+    -moz-transition: opacity .5s, visibility .5s;
+    -ms-transition: opacity .5s, visibility .5s;
+    -o-transition: opacity .5s, visibility .5s;
+
+    i {
+        opacity: 1;
+        font-size: 2rem;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// ============= ============= ============= PARTNER CLG LIST PAGE ============= ============= ============= 
+
+.partner-school-list {
+    line-height: 2;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+
+// ============= ============= ============= RESOURCE PAGE ============= ============= ============= 
+#divResources ul,
+#divContacts ul {
+    line-height: 2.5;
+}
+
+// ABOUT PAGE
+
+.externship-logo-main-section {
+    position: absolute;
+    top: 69px;
+    right: 25px;
+    width: auto;
+    height: 110px;
+    z-index: 4;
+
+    @media(max-width: 768px) {
+        top: 75px;
+        right: 17px;
+        width: auto;
+        height: 110px;
+    }
+
+    @media(max-width: 575.98px) {
+        top: 77px;
+        right: 16px;
+        width: auto;
+        height: 70px;
+    }
+}
+
+.main-bg-transparent {
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 5rem 0;
+    // margin-top: 68px;
+
+    .starts-bg {
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + 250px);
+        height: 100%;
+        top: 0;
+        opacity: 1;
+        left: calc(50% - 1000px);
+        transform-origin: center;
+        background: url('https://githubuniverse.com/2017/assets/img/universe/shapes/stars-lg.svg') center/400px auto repeat;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+// ============= ============= ============= ACTIVE HIGHLIGHT ============= ============= ============= 
+
+.menu-item[aria-current]:not([aria-current=false]) {
+    background: #efefef;
+}
+
+.menu-item[aria-current]:not([aria-current=false])::before {
+    width: 4px;
+    background: #318CE9;
+}
+
+
+// ============= ============= ============= MEDIA QUERIES ============= ============= ============= 
+
+@media(min-width: 320px) {
+    .container-lg {
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image-on-lg {
+        display: none;
+    }
+}
+
+@media(max-width: 1012px) {
+    .starts-bg {
+        left: calc(50% - 500px) !important;
+    }
+}
+
+@media(min-width: 1280px) {
+    .container-lg {
+        max-width: 1012px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media(min-width: 769px) {
+    .image-on-lg {
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    .faq input[type='checkbox']:not(:checked)+label {
+        height: 90px;
+    }
+
+    .faq-text {
+        padding: 35px 0;
+    }
+}
+
+@media(max-width: 544px) {
+    .lookup-octo {
+        display: none;
+    }
+
+    .Header-item {
+        .f4 {
+            font-size: 14px !important;
+        }
+    }
+
+    .about-section {
+        .col-md-3 {
+            text-align: center;
+            margin-top: 2rem;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    .faq-heading {
+        width: 90%;
+    }
+
+    .faq input[type='checkbox']:not(:checked)+label {
+        height: 90px;
+    }
+
+    .faq-text {
+        padding-top: 32px;
+    }
+
+    .faq input[type="checkbox"]:checked+label {
+        height: 375px;
+    }
+
+    footer {
+
+        .float-left,
+        .text-right {
+            float: unset !important;
+            text-align: center !important;
+        }
+
+        .text-right {
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .main-bg h1 {
+        font-size: 3.6rem;
+    }
+
+    .faq input[type='checkbox']:not(:checked)+label {
+        height: 120px;
+    }
+
+    .faq-text {
+        padding: 62px 0;
+    }
+}
+
+@media(max-width: 320px) {
+    .main-bg h1 {
+        font-size: 3rem;
+    }
+}
+
+// ======================================================================================
+@keyframes shooting-star {
+    0% {
+        opacity: 1;
+        transform: scale(0) translate3d(0, 0, 0);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1) translate3d(180px, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0) translate3d(180px, 0, 0);
+    }
+}
+
+.shooting-star {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+.shooting-star img {
+    opacity: 0;
+    animation-delay: 0;
+    animation: shooting-star 6s infinite ease-out;
+}
+
+.shooting-star-right {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 130px;
+    transform: rotate(-235deg);
+    pointer-events: none;
+}
+
+.shooting-star-right img {
+    opacity: 0;
+    animation: shooting-star 6s 3s infinite ease-out;
+    animation-delay: 2.5s;
+}
+
+@keyframes shooting-star {
+    0% {
+        opacity: 1;
+        transform: scale(0) translate3d(0, 0, 0);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1) translate3d(180px, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0) translate3d(180px, 0, 0);
+    }
+}
+
+.shooting-star {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+.shooting-star img {
+    opacity: 0;
+    animation-delay: 0;
+    animation: shooting-star 6s infinite ease-out;
+}
+
+.shooting-star-right {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 130px;
+    transform: rotate(-235deg);
+    pointer-events: none;
+}
+
+.shooting-star-right img {
+    opacity: 0;
+    animation: shooting-star 6s 3s infinite ease-out;
+    animation-delay: 2.5s;
+}
